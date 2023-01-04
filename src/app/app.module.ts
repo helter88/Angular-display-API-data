@@ -8,6 +8,8 @@ import { FooterComponent } from './modules/shared/footer/footer.component';
 import { MainComponent } from './modules/shared/main/main.component';
 import { DisplayComponent } from './modules/shared/display/display.component';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,13 @@ import { HttpClientModule } from '@angular/common/http';
     MainComponent,
     DisplayComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
