@@ -7,6 +7,7 @@ import { HeaderComponent } from './modules/shared/header/header.component';
 import { FooterComponent } from './modules/shared/footer/footer.component';
 import { MainComponent } from './modules/shared/main/main.component';
 import { DisplayComponent } from './modules/shared/display/display.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,13 +15,10 @@ import { DisplayComponent } from './modules/shared/display/display.component';
     HeaderComponent,
     FooterComponent,
     MainComponent,
-    DisplayComponent
+    DisplayComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
